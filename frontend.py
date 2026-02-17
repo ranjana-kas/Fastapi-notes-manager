@@ -1,11 +1,13 @@
 import streamlit as st
-import requests
+import os
 
-# ------------------------------------------------------------------
 # CONFIGURATION
-# ------------------------------------------------------------------
-# API_URL = "https://your-app-name.onrender.com" # <--- Use this for Cloud
-API_URL = "http://127.0.0.1:8000"              # <--- Use this for Local Testing
+# We look for the API_URL in Streamlit's secrets (Cloud)
+# If not found, we default to Localhost (Local testing)
+if "API_URL" in st.secrets:
+    API_URL = st.secrets["API_URL"]
+else:
+    API_URL = "http://127.0.0.1:8000"
 
 st.set_page_config(page_title="Notes Manager Pro", page_icon="📝", layout="centered")
 

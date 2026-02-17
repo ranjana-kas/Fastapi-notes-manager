@@ -33,7 +33,7 @@ It features a high-performance REST API backend built with **FastAPI** and a mod
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/fastapi-notes-manager.git](https://github.com/yourusername/fastapi-notes-manager.git)
+   git clone [hhttps://github.com/ranjana-kas/Fastapi-notes-manager]
    cd fastapi-notes-manager
 
 

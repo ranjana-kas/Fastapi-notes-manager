@@ -75,6 +75,7 @@ async def read_note(note_id: int):
 @app.put("/notes/{note_id}", response_model=NoteResponse)
 async def update_existing_note(note_id: int, note_data: NoteUpdate):
     updated_note = await services.update_note(note_id, note_data)
+    print(f"Updated Note: {updated_note}")  # Debugging print statement
     if not updated_note:
         raise HTTPException(status_code=404, detail="Note not found")
     return updated_note

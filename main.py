@@ -41,7 +41,7 @@ def heavy_background_task(note_title: str):
     logger.info(f"BACKGROUND TASK COMPLETED: Processed note '{note_title}'")
 
 # --- ROUTES ---
-
+# ________
 @app.post("/notes/", response_model=NoteResponse, status_code=201)
 async def create_new_note(note: NoteCreate):
     created_note = await services.create_note(note)

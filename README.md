@@ -3,25 +3,40 @@
 A clean, asynchronous REST API built with **FastAPI** to manage notes. 
 This microservice demonstrates modern Python practices, including Pydantic validation, TypedDict models, and modular architecture.
 
+# 📝 Notes Manager (Full Stack)
+
+A complete **Full Stack** application for managing notes. 
+It features a high-performance REST API backend built with **FastAPI** and a modern, interactive frontend built with **Streamlit**.
+
 ## 🚀 Features
-- **Create Notes:** Add new notes with titles and content.
-- **Read Notes:** View all notes or retrieve a specific one by ID.
-- **Update Notes:** Modify existing notes.
-- **Delete Notes:** Remove notes from the system.
-- **In-Memory Storage:** Uses a high-performance Python list structure (simulating a DB).
+
+### Backend (FastAPI)
+- **⚡ Async Architecture:** High-performance, non-blocking endpoints.
+- **🔍 Advanced Search:** Instant filtering by title or content.
+- **📄 Pagination:** Efficient handling of large lists.
+- **🛡️ Data Validation:** Robust data integrity using Pydantic.
+- **⚙️ Background Tasks:** Simulates heavy processing without freezing the app.
+
+### Frontend (Streamlit)
+- **🖥️ Interactive UI:** Clean, web-based interface.
+- **✍️ Real-time Editing:** Create, edit, and delete notes instantly.
+- **📱 Responsive:** Works on desktop and mobile browsers.
 
 ## 🛠️ Tech Stack
 - **Python 3.9+**
-- **FastAPI** (Web Framework)
+- **FastAPI** (Backend API)
 - **Uvicorn** (ASGI Server)
+- **Streamlit** (Frontend UI)
 - **Pydantic** (Data Validation)
 
 ## 📦 Installation
 
-1. **Clone the repository** (or create the folder):
+1. **Clone the repository:**
    ```bash
-   mkdir notes_api
-   cd notes_api
+   git clone [https://github.com/yourusername/fastapi-notes-manager.git](https://github.com/yourusername/fastapi-notes-manager.git)
+   cd fastapi-notes-manager
+
+
 
 2. **install dependecies**
     ```bash
@@ -33,3 +48,7 @@ This microservice demonstrates modern Python practices, including Pydantic valid
 
 - Swagger UI: http://127.0.0.1:8000/docs
 
+## start frontend and backend
+
+- uvicorn main:app --reload
+- streamlit run frontend.py

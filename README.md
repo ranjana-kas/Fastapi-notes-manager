@@ -33,10 +33,3 @@ This microservice demonstrates modern Python practices, including Pydantic valid
 
 - Swagger UI: http://127.0.0.1:8000/docs
 
-notes_api/
-├── main.py       # API Routes and Controller
-├── models.py     # Internal Data Shapes (TypedDict)
-├── schemas.py    # Public Data Contracts (Pydantic)
-├── services.py   # Business Logic (CRUD)
-├── storage.py    # In-memory Database
-└── README.md     # Project Documentation

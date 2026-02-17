@@ -52,3 +52,7 @@ It features a high-performance REST API backend built with **FastAPI** and a mod
 
 - uvicorn main:app --reload
 - streamlit run frontend.py
+
+## try this out 
+
+Visit [app](https://fastapi-notes-manager-yeqsnjndybkcwgnrmajvl2.streamlit.app/) 
